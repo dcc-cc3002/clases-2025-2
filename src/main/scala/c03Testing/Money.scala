@@ -5,7 +5,10 @@ class Money(value: Int, currency: String) {
   def getCurrency(): String = currency
 
   def add(other: Money): Money =
+    // if (getCurrency() == other.getCurrency())
     new Money(getValue() + other.getValue(), getCurrency())
+  // else
+  //  new MoneyBag(Set(this, other))
 
   def foo = println("hola")
 

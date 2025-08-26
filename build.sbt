@@ -8,3 +8,5 @@ lazy val root = (project in file("."))
   )
 
 libraryDependencies += "org.scalameta" %% "munit" % "1.1.0" % Test
+//spray json
+libraryDependencies += "org.apache.pekko" %% "pekko-http-spray-json" % "1.2.0"
